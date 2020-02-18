@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 3px;
+        grid-row-gap: 3px;
+        justify-items: stretch;
+        align-items: stretch;
+        justify-content: stretch;
+        max-width: 375px;
+      }
+
+      .sound {
+        background-color: rgb(246, 160, 255);
+        height: 20vh;
+        width: 31vw;
+        transition: background-color 0.2s ease;
+      }
+
+      .press {
+        background-color: rgb(248, 255, 160);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="sound" data-keycode="49"></div>
+      <div class="sound" data-keycode="50"></div>
+      <div class="sound" data-keycode="51"></div>
+      <div class="sound" data-keycode="81"></div>
+      <div class="sound" data-keycode="87"></div>
+      <div class="sound" data-keycode="69"></div>
+      <div class="sound" data-keycode="65"></div>
+      <div class="sound" data-keycode="83"></div>
+      <div class="sound" data-keycode="68"></div>
+      <div class="sound" data-keycode="90"></div>
+      <div class="sound" data-keycode="88"></div>
+      <div class="sound" data-keycode="67"></div>
+    </main>
+
+    <audio data-key="49" src="./sounds/one.ogg"></audio>
+    <audio data-key="50" src="./sounds/two.ogg"></audio>
+    <audio data-key="51" src="./sounds/three.ogg"></audio>
+    <audio data-key="81" src="./sounds/four.ogg"></audio>
+    <audio data-key="87" src="./sounds/five.ogg"></audio>
+    <audio data-key="69" src="./sounds/six.ogg"></audio>
+    <audio data-key="65" src="./sounds/seven.ogg"></audio>
+    <audio data-key="83" src="./sounds/eight.ogg"></audio>
+    <audio data-key="68" src="./sounds/nine.ogg"></audio>
+    <audio data-key="90" src="./sounds/ten.ogg"></audio>
+    <audio data-key="88" src="./sounds/eleven.ogg"></audio>
+    <audio data-key="67" src="./sounds/twelve.ogg"></audio>
+
+    <script src="index.js"></script>
+
+    <!-- 
+      Credits: This is an attempt to recreate https://www.youtube.com/watch?v=4ghnO8ScYH4 for educational purpose 
+      Credits: Wes Bos' JS30 https://github.com/wesbos/JavaScript30/blob/master/01%20-%20JavaScript%20Drum%20Kit/index-FINISHED.html
+    -->
+  </body>
+</html>
